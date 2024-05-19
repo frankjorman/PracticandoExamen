@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="66dp"
+        android:layout_marginBottom="76dp"
+        android:text="Menu MultiApp"
+        app:layout_constraintBottom_toTopOf="@+id/btnTkambio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnTkambio"
+        android:layout_width="180dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="34dp"
+        android:text="T-KAMBIO"
+        app:layout_constraintBottom_toTopOf="@+id/btnEdadDias"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/btnEdadDias"
+        android:layout_width="184dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="38dp"
+        android:text="EDAD EN DAS"
+        app:layout_constraintBottom_toTopOf="@+id/btnContactos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTkambio" />
+
+    <Button
+        android:id="@+id/btnContactos"
+        android:layout_width="178dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="354dp"
+        android:text="CONTACTOS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEdadDias" />
+</androidx.constraintlayout.widget.ConstraintLayout>
